@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vendor</title>
 
     
@@ -22,25 +23,41 @@ and open the template in the editor.
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="https://mobilemarketingmagazine.com/wp-content/uploads/eCommerce.jpg">
 
-    </head>
+<link rel="icon" type="image/x-icon" href="https://mobilemarketingmagazine.com/wp-content/uploads/eCommerce.jpg">
 <style>
+    body{
+        background-color: gray;
+    }
     
 #background{
     background-image: url("img/view.jpg");
     height: 500px;background-repeat: no-repeat;margin-top: 10px;
     }
+    #watch_bac_gre{
+        height: 100px;width: 100px;background-color: greenyellow;
+    }
+    #watch_bac_whi{
+        height: 100px;width: 100px;background-color: white;display: none;
+    }
     
 
 </style>
-<body>   <div id="nav">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style=" z-index:2 ;color: black">
-                <a href="skandatalanki.html" class="navbar-brand">Home</a>
-                <a href="#Technical skills" class="navbar-brand">Your Orders</a>
-                <a href="#Education" class="navbar-brand">Contact Us</a>
-            </nav> </div>
+    </head>
+
+<body>   
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+       <a href="" class="navbar-brand">hello</a>
+       <div class="dropdown">
+           <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">links</button>
+           <div class="dropdown-menu">
+               <a href="" class="dropdown-item">link1</a>
+               <a href="" class="dropdown-item">link1</a>
+           </div>
+       </div>
+       
+   </nav>
            
     <div class="container">
                 <center>
@@ -50,8 +67,8 @@ and open the template in the editor.
                     <div class="col-sm-8" style="margin-top: 150px;">
                         
                                                 <div id="text">
-                                                    <pre> <h2>  The most popular Vendor website</h2>
-        <b><h5>It is a platform for purchasing goods online.</b></h5></pre><br><br>
+                                                    <pre> <h2>The most popular Vendor website</h2>
+        <b><h5>It is a platform for purchasing goods online.</h5></b></pre><br><br>
         <button type="button" class="btn btn-info">Start Shopping</button>
    </div>
                             
@@ -69,21 +86,39 @@ and open the template in the editor.
                   for the products purchased</h3></div>
     <div class="col-sm-3"></div>
 </div><br><br>
-<div class="row">
-    <div class="col-sm-4">
-       
-       <img src="img/view.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-       
-    </div>
-    <div class="col-sm-4">
-            <img src="img/view.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-        
+<div id="shoes">
+    <center><div id="watch_bac_gre"><img src="img/watch.png" alt="watch" style="margin-top:10px;"></div>
+        <div id="watch_bac_whi">  <img src="img/watch.png" alt="watch" style="margin-top:10px;"></div></center>
+<div class="row" id="watches">
+    <div class="col-sm-4"  >
+        <div class="thumbnail" style="background-color:white">
+        <center>
+       <img src="img/watch1.jpg" alt="image" title="image">
+        </center>
+            <center>  <p>All are original products and you will be guarenteed
+                    for the products purchased</p></center>
+
         </div>
-        <div class="col-sm-4">
-                <img src="img/view.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-        
+    </div>
+    <div class="col-sm-4" >
+        <div class="thumbnail" style="background-color:white"><center>
+            <img src="img/watch2.jpg" alt="image" title="image">
+            </center><center>
+            <p>All are original products and you will be guarenteed
+                for the products purchased</p></center>
+        </div>
+    </div>
+        <div class="col-sm-4" >
+            <div class="thumbnail" style="background-color:white">
+            <center>
+                <img src="img/watch3.jpg" alt="image" title="image">
+              <p>All are original products and you will be guarenteed
+                    for the products purchased</p></center>
             </div>
+            </div>
+    
          
+</div>
 </div><!--
 <div class="row">
         <div class="col-sm-4">
@@ -117,6 +152,16 @@ and open the template in the editor.
                     </div>
                  
         </div>-->
+
+<script type="text/javascript">
+   
+    
+    $('#watches').mouseover(function(){
+        console.log($(this));
+    });
+    
+    
+</script>
 
 </body>
 </html>
